@@ -142,7 +142,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Caracteristicas.cpp" />
+    <ClCompile Include="Castelo.cpp" />
+    <ClCompile Include="Edificio.cpp" />
+    <ClCompile Include="Quinta.cpp" />
+    <ClCompile Include="Ser.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Torre.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agressao.h" />
+    <ClInclude Include="Aluno.h" />
+    <ClInclude Include="Armadura.h" />
+    <ClInclude Include="Bandeira.h" />
+    <ClInclude Include="BuildSeeker.h" />
+    <ClInclude Include="Caracteristicas.h" />
+    <ClInclude Include="Castelo.h" />
+    <ClInclude Include="Colonia.h" />
+    <ClInclude Include="Ecologico.h" />
+    <ClInclude Include="Edificio.h" />
+    <ClInclude Include="Espada.h" />
+    <ClInclude Include="Faca.h" />
+    <ClInclude Include="HeatSeeker.h" />
+    <ClInclude Include="Jogo.h" />
+    <ClInclude Include="PeleDura.h" />
+    <ClInclude Include="Quinta.h" />
+    <ClInclude Include="Remedio.h" />
+    <ClInclude Include="SecondChance.h" />
+    <ClInclude Include="Ser.h" />
+    <ClInclude Include="Superior.h" />
+    <ClInclude Include="Torre.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Walker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

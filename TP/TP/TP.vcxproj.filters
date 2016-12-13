@@ -18,5 +18,94 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Caracteristicas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Castelo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Edificio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Quinta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Torre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agressao.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Aluno.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Armadura.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bandeira.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildSeeker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caracteristicas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Castelo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Colonia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ecologico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Edificio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Espada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Faca.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatSeeker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Jogo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PeleDura.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quinta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Remedio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondChance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Superior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Torre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Walker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

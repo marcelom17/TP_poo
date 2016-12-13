@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClCompile Include="Caracteristicas.cpp" />
     <ClCompile Include="Castelo.cpp" />
+    <ClCompile Include="Consola.cpp" />
     <ClCompile Include="Edificio.cpp" />
     <ClCompile Include="Quinta.cpp" />
     <ClCompile Include="Ser.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="Caracteristicas.h" />
     <ClInclude Include="Castelo.h" />
     <ClInclude Include="Colonia.h" />
+    <ClInclude Include="Consola.h" />
     <ClInclude Include="Ecologico.h" />
     <ClInclude Include="Edificio.h" />
     <ClInclude Include="Espada.h" />

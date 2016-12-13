@@ -36,6 +36,9 @@
     <ClCompile Include="Torre.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Consola.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Agressao.h">
@@ -105,6 +108,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Walker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Consola.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

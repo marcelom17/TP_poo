@@ -12,7 +12,7 @@ class Ser {
 	char id = 'S';
 protected:
 	vector<Caracteristicas *> ataque;
-	vector<Caracteristicas *> defesa;
+	vector<Caracteristicas *> defesa;  //porque defesa ?? m
 	// not sure se é preciso 1 ou 2 ...
 public:
 	Ser();

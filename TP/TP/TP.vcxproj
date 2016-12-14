@@ -146,6 +146,7 @@
     <ClCompile Include="Castelo.cpp" />
     <ClCompile Include="Consola.cpp" />
     <ClCompile Include="Edificio.cpp" />
+    <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="Quinta.cpp" />
     <ClCompile Include="Ser.cpp" />
     <ClCompile Include="Source.cpp" />

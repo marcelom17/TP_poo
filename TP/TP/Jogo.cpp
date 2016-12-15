@@ -77,7 +77,6 @@ bool Jogo::comandos_configurar(string comando)
 
 	if (cmd_aux == "SAIR") {
 		exit(0);
-
 	}
 //por no comandos_jogo
 /*	if (cmd_aux == "NEXT") {
@@ -90,42 +89,52 @@ bool Jogo::comandos_configurar(string comando)
 	*/
 	if (cmd_aux == "DIM") {
 		dimensao(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "MOEDAS") {
-
+		moedas(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "OPONETES") {
-
+		oponentes(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "CASTELO") {
-
+		castelo(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "MKPERFIL") {
-
+		mkperfil(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "ADDPERFIL") {
-
+		addperfil(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "SUBPERFIL") {
-
+		subperfil(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "RMPERFIL") {
-
+		rmperfil(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "LOAD") {
-
+		load(comandos);
+		return true;
 	}
 
 	if (cmd_aux == "INICIO") {
-
+		inicio();
+		return true;
 	}
 
 	return false;
@@ -147,4 +156,44 @@ void Jogo::proximaInstancia(int n){
 
 		instancia++;
 	}
+}
+
+void Jogo::dimensao(vector<string> comandos){
+
+}
+
+void Jogo::moedas(vector<string> comandos){
+
+}
+
+void Jogo::oponentes(vector<string> comandos){
+
+}
+
+void Jogo::castelo(vector<string> comandos){
+
+}
+
+void Jogo::mkperfil(vector<string> comandos){
+
+}
+
+void Jogo::addperfil(vector<string> comandos){
+
+}
+
+void Jogo::subperfil(vector<string> comandos){
+
+}
+
+void Jogo::rmperfil(vector<string> comandos){
+
+}
+
+void Jogo::load(vector<string> comandos){
+
+}
+
+void Jogo::inicio(){
+
 }

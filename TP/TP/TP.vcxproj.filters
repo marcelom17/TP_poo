@@ -42,6 +42,12 @@
     <ClCompile Include="Jogo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Planicie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Posicao.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Agressao.h">
@@ -114,6 +120,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Consola.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Planicie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Posicao.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

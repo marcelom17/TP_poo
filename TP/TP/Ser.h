@@ -1,19 +1,19 @@
-#pragma once
+#ifndef SER_H
+#define SER_H
 
 #include "Util.h"
+#include "Perfil.h"
+#include "Posicao.h"
 
-class Caracteristicas;
 class Colonia;							// not sure tho..
 
 class Ser {
+	Perfil *perfil;
 	int saude;
 	int forca;
 	int velocidade;
-	char id = 'S';
-protected:
-	vector<Caracteristicas *> ataque;
-	vector<Caracteristicas *> defesa;  //porque defesa ?? m
-	// not sure se é preciso 1 ou 2 ...
+	Posicao *pos;
+
 public:
 	Ser();
 	~Ser();
@@ -30,3 +30,5 @@ public:
 
 	void mostraSer();
 };
+
+#endif // !SER_H

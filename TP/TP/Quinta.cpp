@@ -10,6 +10,6 @@ Quinta::Quinta()
 string Quinta::getAsString() const
 {
 	ostringstream os;
-	os << "Quinta:\n\tSaude: " << this->getSaude() << "\n\tDefesa: " << this->getDefesa(); << endl;
+	os << "Quinta:\n\tSaude: " << this->getSaude() << "\n\tDefesa: " << this->getDefesa() << endl;
 	return os.str();
 }

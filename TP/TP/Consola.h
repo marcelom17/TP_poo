@@ -50,7 +50,7 @@ public:
 	const static char ENTER = 13;
 	const static char ESCAPE = 27;
 
-	Consola() = delete;  // Nao quero objectos disto a proliferarem por ai.
+	//Consola() = delete;  // Nao quero objectos disto a proliferarem por ai.
 						 // As funcçõe são estáticas por alguma razão.
 						 // ----------> C++ 2011 ou posterior
 

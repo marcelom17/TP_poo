@@ -144,10 +144,10 @@
   <ItemGroup>
     <ClCompile Include="Caracteristicas.cpp" />
     <ClCompile Include="Castelo.cpp" />
+    <ClCompile Include="Celula.cpp" />
     <ClCompile Include="Consola.cpp" />
     <ClCompile Include="Edificio.cpp" />
     <ClCompile Include="Jogo.cpp" />
-    <ClCompile Include="Planicie.cpp" />
     <ClCompile Include="Posicao.cpp" />
     <ClCompile Include="Quinta.cpp" />
     <ClCompile Include="Ser.cpp" />
@@ -162,6 +162,7 @@
     <ClInclude Include="BuildSeeker.h" />
     <ClInclude Include="Caracteristicas.h" />
     <ClInclude Include="Castelo.h" />
+    <ClInclude Include="Celula.h" />
     <ClInclude Include="Colonia.h" />
     <ClInclude Include="Consola.h" />
     <ClInclude Include="Ecologico.h" />
@@ -171,7 +172,6 @@
     <ClInclude Include="HeatSeeker.h" />
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="PeleDura.h" />
-    <ClInclude Include="Planicie.h" />
     <ClInclude Include="Posicao.h" />
     <ClInclude Include="Quinta.h" />
     <ClInclude Include="Remedio.h" />

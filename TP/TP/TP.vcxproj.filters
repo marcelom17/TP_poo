@@ -42,10 +42,10 @@
     <ClCompile Include="Jogo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Planicie.cpp">
+    <ClCompile Include="Posicao.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Posicao.cpp">
+    <ClCompile Include="Celula.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -122,10 +122,10 @@
     <ClInclude Include="Consola.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Planicie.h">
+    <ClInclude Include="Posicao.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Posicao.h">
+    <ClInclude Include="Celula.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

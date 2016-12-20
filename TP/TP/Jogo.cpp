@@ -1,9 +1,24 @@
 #include "Jogo.h"
 
 
+Jogo::Jogo(){
+	blin = 0;
+	bcol = 0;
+	system("chcp 1252 >NUL:");
+	c.setScreenSize(50, 90);						// Tamanho 'lógico' da consola em linhas x colunas de carateres: o tamanho em pixels depende do tamanho das fontes
+
+	cor_fundo = c.VERDE;		// Cor de fundo da consola
+	cor_texto = c.PRETO;	// Cor por omissão do texto e elementos gráficos
+
+	c.setBackgroundColor(cor_fundo);// Define a cor de fundo
+	c.setTextColor(cor_texto);		// Define a cor dos carateres
+
+	c.clrscr();
+}
+
 void Jogo::Inicia_jogo(){
 	//limpar o ecra
-
+	desenha_tabuleiro();
 	//usar consola para mostrar as coisas
 
 }
@@ -21,18 +36,15 @@ void Jogo::desenha_tabuleiro(){
 	bool jogar = true;
 	
 	while (jogar) {
-		c.gotoxy(0,44);
-		c.setBackgroundColor(c.PRETO);
 		c.gotoxy(0, 45);
 		c.setBackgroundColor(c.BRANCO);
 		c.setTextColor(c.PRETO);
 		cout << "Comando: ";
-		for (unsigned int i = 1; i < 110; i++)
+		for (unsigned int i = 1; i < 117; i++)
 			cout << " ";
-		//Sleep(1500);
 		limpa_consola(c, 0, 0);
-		c.setTextColor(c.BRANCO_CLARO);
-		c.gotoxy(16, 45);
+		c.setTextColor(c.PRETO);
+		c.gotoxy(9, 45);
 		getline(cin, comando);
 
 
@@ -96,7 +108,7 @@ bool Jogo::comandos_configurar(string comando)
 		return true;
 	}
 
-	if (cmd_aux == "OPONETES") {
+	if (cmd_aux == "OPONENTES") {
 		oponentes(comandos);
 		return true;
 	}
@@ -157,94 +169,30 @@ void Jogo::proximaInstancia(int n){  //e para o next
 	}
 }
 
-void Jogo::criar_mapa(int linhas, int colunas){
-	int x = 10, y = 5;
-	int i = 0, j = 0, k = 0 ,size = 0;
-	string num;	
-	c.gotoxy(x, y);
-	c.setBackgroundColor(c.AMARELO_CLARO);
-	c.setTextColor(c.PRETO);
-//rebordo
-	for (k = 0; k < colunas; k++) {
-		num = to_string(k);
-		size = num.size();
-
-		switch (size){	
-		case 1:
-			cout << " " << k << " ";
-			break;
-		case 2:
-			cout << " " << k;
-			break;
-		case 3:
-			cout << k;
-			break;
-		}
-	}
-	y++;
-
-	for (i = 0; i < linhas; i++)
-	{
-		x = x - 3;
-		c.gotoxy(x, y);
-		c.setBackgroundColor(c.AMARELO_CLARO);
-		c.setTextColor(c.PRETO);
-		cout << "   ";
-		y++;
-		c.gotoxy(x, y);
-
-		cout << i;
-		if (i < 100) {
-			if (i < 10)
-				cout << "  ";
-			else
-				cout << " ";
-		}
-
-		y++;
-		c.gotoxy(x, y);
-		cout << "   ";
-		y = y - 2;
-		x = x + 3;
-		c.gotoxy(x, y);
-
-		for (j = 0; j < colunas; j++)
-		{
-			if (i % 2 == 0) {
-
-				if (j % 2 == 0)
-
-					c.setBackgroundColor(c.VERMELHO);
-
-				else
-					c.setBackgroundColor(c.BRANCO);
-
-			}
-			else
-			{
-				if (j % 2 != 0)
-					c.setBackgroundColor(c.VERMELHO);
-				else
-					c.setBackgroundColor(c.BRANCO);
-			}
-
-
-			imprimeZona(x, y, i, j, colunas);
-
-			x = x + 3;
-			c.gotoxy(x, y);
-		}
-		x = 10;
-		y = y + 3;
-		c.gotoxy(x, y);
-
-	}
+void Jogo::msgErro(string msg){
+	cout << "erro";
 }
 
-void Jogo::imprimeZona(int x, int y, int px, int py, int col){
-	c.gotoxy(x, y);
-	int pos = col*px + py;
-	vec_mapa[pos].imprime(x, y);
+void Jogo::criar_mapa(int linhas, int colunas){
+	for (int i = 0; i < linhas; i++) {
+		//vector<Celula *>col;
+			mapa.push_back();
+		for (int j = 0; j < colunas; j++) {
+			col.at(j)->setColor(c.PRETO);
+		}
+	}
+
+}
+
+void Jogo::imprimeFoco(int anchorL, int anchorC){
+	c.clrscr();
+	for (int i = 0; i < 20; i++) {
+
+		for (int j = 0; j < 40; j++) {
+			c.gotoxy(anchorL + i, anchorC + j);
+			cout << "L";
+		}
+	}
 }
 
 bool Jogo::verifica_dim(int x) {
@@ -262,21 +210,14 @@ void Jogo::dimensao(vector<string> comandos){
 		msgErro("numero de Argumentos errado (dim lin col)");
 	}
 	else {
-		if (vec_mapa.size() == 0) {
+		//if (mapa.size() == 0) {
 			int l = atoi(comandos[1].c_str());
 			int c = atoi(comandos[2].c_str());
 			if (verifica_dim(c) && verifica_dim(l))//se DIMENSOES ESTAO NO LIMITE
 			{
 				this->coluna_f = c;
 				this->linha_f = l;
-				for (int i = 0; i < l; i++)
-				{
-					for (int j = 0; j < c; j++)
-					{
-						vec_mapa.push_back(Planicie(Posicao(i, j, transformaBiToUni(j, i))));
-					}
-				}
-				criar_mapa(l, c);
+				//criar_mapa(l, c);
 			}
 			else
 			{
@@ -284,10 +225,8 @@ void Jogo::dimensao(vector<string> comandos){
 				msgErro(msg);
 			}
 		}
-		else {
-			msgErro("Jogo ja criado");
-		}
-	}
+
+//	}
 
 }
 
@@ -324,5 +263,7 @@ void Jogo::load(vector<string> comandos){
 }
 
 void Jogo::inicio(){
-
+	criar_mapa(linha_f,coluna_f);
+	cout << "criou";
+	imprimeFoco(10, 10);
 }

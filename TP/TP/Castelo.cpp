@@ -10,6 +10,6 @@ Castelo::Castelo()
 string Castelo::getAsString() const
 {
 	ostringstream os;
-	os << "Castelo:\n\tSaude: " << this->getSaude() << "\n\tDefesa: " << this->getDefesa(); << endl;
+	os << "Castelo:\n\tSaude: " << this->getSaude() << "\n\tDefesa: " << this->getDefesa() << endl;
 	return os.str();
 }

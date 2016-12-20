@@ -2,16 +2,20 @@
 
 #include "Util.h"
 #include "Consola.h"
-#include "Planicie.h"
+#include "Celula.h"
 #include "Posicao.h"
 
 class Jogo {
 	Consola c;
 	int instancia=0;
 	int linha_f, coluna_f;
-	vector <Planicie> vec_mapa;  // ?? nao sei por causa da planicie
+	int cor_fundo, cor_texto;
+	int blin, bcol;
+	vector<vector<Celula *>>mapa;
 
 public:
+	Jogo();
+
 	void Inicia_jogo();
 	int avanca_instancia(int n);
 	void desenha_tabuleiro();
@@ -23,7 +27,7 @@ public:
 	void msgErro(string msg);
 
 	void criar_mapa(int linhas, int colunas);
-	void imprimeZona(int x, int y, int px, int py, int col);
+	void imprimeFoco(int anchorL, int anchorC);
 	bool verifica_dim(int x);
 
 // comandos de configuracao

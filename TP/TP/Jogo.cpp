@@ -175,8 +175,8 @@ void Jogo::msgErro(string msg){
 
 void Jogo::criar_mapa(int linhas, int colunas){
 	for (int i = 0; i < linhas; i++) {
-		//vector<Celula *>col;
-			mapa.push_back();
+		vector<Celula *>col;
+			mapa.push_back(col);
 		for (int j = 0; j < colunas; j++) {
 			col.at(j)->setColor(c.PRETO);
 		}

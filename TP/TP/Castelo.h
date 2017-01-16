@@ -14,4 +14,4 @@ public:
 	string getAsString() const;
 };
 
-#endi
+#endif

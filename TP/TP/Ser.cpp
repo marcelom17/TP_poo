@@ -50,5 +50,5 @@ int Ser::getVelocidade()
 
 void Ser::mostraSer()
 {
-	cout << this->id;
+	//cout << this->id;
 }
